@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { GetStaticProps } from 'next';
 
 import { getPrismicClient } from '../services/prismic';
@@ -24,9 +25,14 @@ interface HomeProps {
   postsPagination: PostPagination;
 }
 
-// export default function Home() {
-//   // TODO
-// }
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+export default function Home() {
+  return (
+
+      <h1>Home</h1>
+
+  );
+}
 
 // export const getStaticProps = async () => {
 //   // const prismic = getPrismicClient();
